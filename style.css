@@ -1,0 +1,109 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+h1,h2,h3,h4,h5,h6,strong{
+  font-family: 'Philosopher', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+header {
+  position: absolute;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+}
+ul{
+  list-style-type: none;
+}
+#banner{
+  display: none;
+  background-color: #EF7966;
+}
+#categories{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.categories{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  align-content: space-between;
+}
+.navigation-column{
+  display: block;
+  width: 100%;
+  /* background-color: #480048; */
+}
+#logo{
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 767px){
+  header {
+    position: static;
+    height: 200px;
+  }
+  #banner{
+    display: block;
+    padding: 5px;
+    text-align: center;
+  }
+  .banner-promo{
+    display: inline-block;
+    width: 31%;
+    line-height: 34px;
+    font-weight: 600;
+  }
+  .banner-promo:nth-child(2){
+    width: 35%;
+  }
+  .banner-promo a,
+  .banner-promo a:active,
+  .banner-promo a:focus
+  .banner-promo a:visited{
+    color: white;
+  }
+  .dividers{
+    position: relative;
+  }
+  .dividers::before,
+  .dividers::after{
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background-color: #fff;
+  }
+  .dividers::before{
+    left: 0;
+  }
+  .dividers::after{
+    right: 0;
+  }
+  #categories{
+    display: block;
+    position: relative;
+    margin-top: 0;
+  }
+  .category-bar{
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .navigation-column {
+    display: inline-block;
+    width: 50%;
+  }
+}
