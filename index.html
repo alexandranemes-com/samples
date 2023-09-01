@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact Alexandra Nemes</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header></header>
+    <main>
+        <section class="form-container">
+            <h2>How can I help?</h2>
+            <p>Do you have a question or are interested in working with me?</p>
+            <p>Just fill out the form below</p>
+            <form method="post" action="" id="contact-form" >
+                <fieldset class="contacts">
+                    <label for="name" id="name-label">Your first and last name <input type="text" id="name" required /><span class="required-field">*</span></label>
+                    <label for="email" id="email-label">Your email address <input type="email" id="email" name="email" required /><span class="required-field">*</span></label>
+                    <label for="organisation" id="organisation">The name of your organisation: <input type="text" required><span class="required-field">*</span></label>
+                    <label for="dropdown">You are a:
+                        <select id="dropdown" name="dropdown" required><span class="required-field">*</span>
+                            <option value=""></option>
+                            <option value="hr">HR Representative / Manager</option>
+                            <option value="recruiter">Recruiter</option>
+                            <option value="business_owner">CEO / Business owner</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="project-stage">
+                    <p>Your project is:</p>
+                    <label for="fresh-project">
+                        <input id="fresh-project" type="radio" name="project-type" value="fresh-project"> ...brand new and there are no designs or programming done yet
+                    </label>
+                    <label for="design-ready">
+                        <input id="design-ready" type="radio" name="project-type" value="design-ready"> ...has already been designed but the development is not started
+                    </label>
+                    <label for="project-started">
+                        <input id="project-started" value="project-started" type="radio" name="project-type"> ...has been designed, it's already in development
+                    </label>
+                    <label for="maintenance">
+                        <input id="maintenance" value="maintenance" type="radio" name="maintenance"> ...complete, you're looking for updates and maintenance only
+                    </label>
+                    <label for="various">
+                        <input id="various" value="various" type="radio" name="various"> You have multiple projects in various states
+                    </label>
+                </fieldset>
+                <fieldset class="project-details">
+                    <label for="details">Tell me more about about your project(s):<span class="required-field">*</span><textarea id="details" name="details" type="textarea" cols="30" rows="1" required></textarea></label>
+                    <label for="timeline">Do you have a timeline in mind?<span class="required-field">*</span> <textarea name="timeline" id="timeline" cols="30" rows="1" required></textarea></label>
+                    <label for="docs">Upload any documents or files you want to share: <input id="docs" type="file" name="docs" /></label>
+                </fieldset>
+                <input id="submit" type="submit" value="Submit" />
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</html>

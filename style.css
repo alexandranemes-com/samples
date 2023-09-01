@@ -1,0 +1,42 @@
+.form-container{
+    position: absolute;
+    top: 10vh;
+    width: 40%;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+    text-align: center;
+}
+#contact-form {
+    text-align: left;
+}
+.contacts,
+.project-stage,
+.project-details {
+    display: inline-grid;
+    display: -ms-inline-grid;
+    border: none;
+    width: 100%;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+    border-bottom: 1px solid #ed7964;
+    outline: none;
+}
+.project-details select,
+.project-details input,
+.project-details textarea,
+.contacts select,
+.contacts input,
+.contacts textarea {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    border: none;
+    border-bottom: 1px solid #ed7964;
+    background-color: transparent;
+}
