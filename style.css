@@ -1,15 +1,12 @@
 .form-container{
-    position: absolute;
-    top: 10vh;
-    width: 40%;
     margin: auto;
-    left: 0;
-    right: 0;
-
     text-align: center;
 }
 #contact-form {
     text-align: left;
+}
+fieldset{
+    padding: none;
 }
 .contacts,
 .project-stage,
@@ -37,6 +34,14 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
     width: 100%;
     min-height: 2em;
     border: none;
-    border-bottom: 1px solid #ed7964;
+    border-bottom: 1px solid #EEA185;
     background-color: transparent;
+}
+.warning-label{
+    color: #ed7964;
+}
+@media screen and (min-width: 760px) {
+    .form-container{
+        width: 40%;
+    }
 }
