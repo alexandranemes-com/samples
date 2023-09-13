@@ -36,7 +36,7 @@
                     <fieldset class="project-stage">
                         <legend>Tell me about about your project(s)</legend>
                         <p>Your project is:</p>
-                        <label for="fresh-project">
+                        <label for="fresh-project" class="status">
                             <input id="fresh-project" type="radio" name="project-type" value="fresh-project"> ...brand new and there are no designs or programming done yet
                         </label>
                         <label for="design-ready">
@@ -46,10 +46,10 @@
                             <input id="project-started" value="project-started" type="radio" name="project-type"> ...has been designed, it's already in development
                         </label>
                         <label for="maintenance">
-                            <input id="maintenance" value="maintenance" type="radio" name="maintenance"> ...complete, you're looking for updates and maintenance only
+                            <input id="maintenance" value="maintenance" type="radio" name="project-type"> ...complete, you're looking for updates and maintenance only
                         </label>
                         <label for="various">
-                            <input id="various" value="various" type="radio" name="various"> You have multiple projects in various states
+                            <input id="various" value="various" type="radio" name="project-type"> You have multiple projects in various states
                         </label>
                         <label for="details">Additional details about the project(s)<span class="required-field">*</span><textarea id="details" name="details" type="textarea" cols="30" rows="1" ></textarea></label>
                         <label for="timeline">Do you have a timeline in mind?<span class="required-field">*</span> <textarea name="timeline" id="timeline" cols="30" rows="1" ></textarea></label>
