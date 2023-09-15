@@ -8,9 +8,9 @@
 fieldset{
     padding: none;
 }
-.contacts,
-.project-stage,
-.project-details {
+#contact,
+#project-stage,
+#project-details {
     display: inline-grid;
     display: -ms-inline-grid;
     border: none;
@@ -24,12 +24,15 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
     border-bottom: 1px solid #ed7964;
     outline: none;
 }
-.project-details select,
-.project-details input,
-.project-details textarea,
-.contacts select,
-.contacts input,
-.contacts textarea {
+#project-details select,
+#project-details input,
+#project-details textarea,
+#project-stage select,
+#project-stage input,
+#project-stage textarea,
+#contact select,
+#contact input,
+#contact textarea {
     margin: 10px 0 0 0;
     width: 100%;
     min-height: 2em;

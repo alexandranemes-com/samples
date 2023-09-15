@@ -19,7 +19,7 @@
                 <p>Just fill out the form below</p>
                 <form method="" action="" id="contact-form">
                     <legend>Tell me about yourself</legend>
-                    <fieldset class="contacts">
+                    <fieldset id="contact">
                         <label for="name" id="name-label">Your first and last name<span class="required-field">*</span> <input type="text" id="name" /></label>
                         <label for="email" id="email-label">Your email address<span class="required-field">*</span> <input type="email" id="email" name="email" /></label>
                         <label for="organisation" id="organisation-label">The name of your organisation<span class="required-field">*</span><input type="text" id="organisation" name="organisation"/></label>
@@ -33,24 +33,26 @@
                             </select>
                         </label>
                     </fieldset>
-                    <fieldset class="project-stage">
+                    <fieldset id="project-stage">
                         <legend>Tell me about about your project(s)</legend>
-                        <p>Your project is:</p>
+                        <p>Your project is:<span class="required-field">*</span></p>
                         <label for="fresh-project" class="status">
-                            <input id="fresh-project" type="radio" name="project-type" value="fresh-project"> ...brand new and there are no designs or programming done yet
+                            <input id="fresh-project" type="radio" name="project-type" value="fresh-project" /> ...brand new and there are no designs or programming done yet
                         </label>
                         <label for="design-ready">
-                            <input id="design-ready" type="radio" name="project-type" value="design-ready"> ...has already been designed but the development is not started
+                            <input id="design-ready" type="radio" name="project-type" value="design-ready" /> ...has already been designed but the development is not started
                         </label>
                         <label for="project-started">
-                            <input id="project-started" value="project-started" type="radio" name="project-type"> ...has been designed, it's already in development
+                            <input id="project-started" value="project-started" type="radio" name="project-type" /> ...has been designed, it's already in development
                         </label>
                         <label for="maintenance">
-                            <input id="maintenance" value="maintenance" type="radio" name="project-type"> ...complete, you're looking for updates and maintenance only
+                            <input id="maintenance" value="maintenance" type="radio" name="project-type" /> ...complete, you're looking for updates and maintenance only
                         </label>
                         <label for="various">
-                            <input id="various" value="various" type="radio" name="project-type"> You have multiple projects in various states
+                            <input id="various" value="various" type="radio" name="project-type" /> You have multiple projects in various states
                         </label>
+                    </fieldset>
+                    <fieldset id="project-details">
                         <label for="details">Additional details about the project(s)<span class="required-field">*</span><textarea id="details" name="details" type="textarea" cols="30" rows="1" ></textarea></label>
                         <label for="timeline">Do you have a timeline in mind?<span class="required-field">*</span> <textarea name="timeline" id="timeline" cols="30" rows="1" ></textarea></label>
                         <label for="docs">Upload any documents or files you want to share: <span class="optional-field">(optional)</span> <input id="docs" type="file" name="docs" /></label>
